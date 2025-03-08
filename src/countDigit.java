@@ -1,4 +1,5 @@
-//
+// Geek for geeks 
+// https://www.geeksforgeeks.org/problems/count-digits5716/1
 
 class Solution {
     static int evenlyDivides(int n) {
