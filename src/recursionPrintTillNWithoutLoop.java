@@ -10,14 +10,20 @@ class Solution {
         printNos(n-1);
         System.out.print(n + " ");
         
-        
-        
-   //My code no idea why it didnt work for n=2 and others maybe      
-        // if( cnt > n) return;
-        
-        // System.out.print(cnt + " ");
-        // cnt = cnt+ 1;
-        // printNos(n);
-        
     }
 }
+
+
+// Reverse of this 
+class Solution {
+
+    void printNos(int N) {
+        // code here
+        
+        if(N == 0) return;
+        System.out.print(N+" ");
+        printNos(N-1);
+    }
+}
+
+
