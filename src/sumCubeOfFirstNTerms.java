@@ -13,3 +13,11 @@ class Solution {
         return sum;
     }
 }
+
+// Using Recursion 
+class Solution {
+    int sumOfSeries(int n) {        
+        if(n == 0) return 0;
+        return  sumOfSeries(n-1) + (int) Math.pow(n,3);
+    }
+}
