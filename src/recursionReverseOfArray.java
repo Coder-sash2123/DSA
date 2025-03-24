@@ -22,3 +22,23 @@ class Solution {
 
 
 // Recursion Main code 
+
+class Solution {
+    public void reverseArray(int arr[]) {
+        // code here
+        int n = arr.length-1;
+        reverse(0,n,arr);
+    }
+    
+    private void reverse(int i,int n,int arr[]){
+        if(i>=n){
+            return;
+        }
+     int temp = arr[i];
+     arr[i] = arr[n];
+     arr[n] = temp;
+     
+     reverse(i+1,n-1,arr);
+     
+    }
+}
